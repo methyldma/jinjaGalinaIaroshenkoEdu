@@ -11,8 +11,8 @@ students = [
     {"name": "Екатерина", "score": 35}
 ]
 
-enviroment = Environment(loader=FileSystemLoader('templates/'))
-template = enviroment.get_template('lesson3_template.txt')
+environment = Environment(loader=FileSystemLoader('templates/'))
+template = environment.get_template('lesson3_template.txt')
 
 for student in students:
     filename = f"lesson3/message_{student['name'].lower()}.txt"
